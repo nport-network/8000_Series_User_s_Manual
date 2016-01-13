@@ -5,9 +5,8 @@
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
-BUILDDIR      = ./
+BUILDDIR      = .
 PDFBUILDDIR   = /tmp
-PDF           = ./manual.pdf
 
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
@@ -126,7 +125,7 @@ latexpdf:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(PDFBUILDDIR)/latex
 	@echo "Running LaTeX files through pdflatex..."
 	cd $(PDFBUILDDIR)/latex ; xelatex *.tex ; xelatex *.tex
-	cp $(PDFBUILDDIR)/latex/*.pdf $(PDF)
+	cp $(PDFBUILDDIR)/latex/*.pdf ./html/_static
 	@echo "pdflatex finished; see $(PDF)"
 
 latexpdfja:
@@ -193,3 +192,9 @@ pseudoxml:
 	$(SPHINXBUILD) -b pseudoxml $(ALLSPHINXOPTS) $(BUILDDIR)/pseudoxml
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
+
+buildall: latexpdf html
+	@echo "Done, build all."
+
+release:
+	git add $(BUILDDIR)/html $(BUILDDIR)/doctrees; git commit -m "release (autobuild)"; git push origin gh-pages
