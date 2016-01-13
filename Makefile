@@ -125,7 +125,7 @@ latexpdf:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(PDFBUILDDIR)/latex
 	@echo "Running LaTeX files through pdflatex..."
 	cd $(PDFBUILDDIR)/latex ; xelatex *.tex ; xelatex *.tex
-	cp $(PDFBUILDDIR)/latex/*.pdf ./html/_static
+	cp $(PDFBUILDDIR)/latex/*.pdf ./pdf
 	@echo "pdflatex finished; see $(PDF)"
 
 latexpdfja:
@@ -193,7 +193,7 @@ pseudoxml:
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
 
-buildall: latexpdf html
+buildall: html latexpdf
 	@echo "Done, build all."
 
 release:
