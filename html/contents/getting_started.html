@@ -1,0 +1,686 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>4. Getting Started &mdash; 8000 Series User&#39;s Manual 1.2 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="8000 Series User&#39;s Manual 1.2 documentation" href="../index.html" />
+    <link rel="next" title="5. Appendix A - Technical" href="appendix.html" />
+    <link rel="prev" title="3. Hardware Installation" href="installation.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="appendix.html" title="5. Appendix A - Technical"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="installation.html" title="3. Hardware Installation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">8000 Series User&#39;s Manual 1.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-started">
+<h1>4. Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>This chapter introduces the management interface of NPort WebSmart Switch.</p>
+<div class="section" id="management-options">
+<h2>4.1. Management Options<a class="headerlink" href="#management-options" title="Permalink to this headline">¶</a></h2>
+<p>The NPort WebSmart Switch can be managed through any port on the device by using the Web-based Management. Each switch must be assigned its own IP Address, which is used for communication with Web-Based Management. The PC’s IP address should be in the same range as the switch. Each switch can allow only one user to access the Web-Based Management at a time. The PC should have an IP address in the same range as the switch. Each switch can allow one user to access to the Web-Based Management at a time.</p>
+<div class="section" id="using-web-based-management">
+<h3>4.1.1. Using Web-based Management<a class="headerlink" href="#using-web-based-management" title="Permalink to this headline">¶</a></h3>
+<p>After a successful physical installation, you can configure the Switch, monitor the network status, and display statistics using a web browser.</p>
+<div class="section" id="supported-web-browsers">
+<h4>4.1.1.1. Supported Web Browsers<a class="headerlink" href="#supported-web-browsers" title="Permalink to this headline">¶</a></h4>
+<p>The embedded Web-based Management currently supports the following web browsers:</p>
+<ul class="simple">
+<li>Internet Explorer 6 or later version</li>
+<li>Netscape 8 or later version</li>
+<li>Firefox 3.0 or later version</li>
+<li>Chrome 5.0 or later version</li>
+<li>Safari 4.0 or later version</li>
+<li>Opera 10 or later version</li>
+</ul>
+</div>
+<div class="section" id="connecting-to-the-switch">
+<h4>4.1.1.2. Connecting to the Switch<a class="headerlink" href="#connecting-to-the-switch" title="Permalink to this headline">¶</a></h4>
+<p>You will need the following equipment to begin the web configuration of your device:
+1. A PC with a RJ-45 Ethernet connection
+2. A standard Ethernet cable
+Connect the Ethernet cable to any of the ports on the front panel of the switch and to the Ethernet port on the PC.</p>
+<div class="figure align-center" id="id1">
+<img alt="../_images/image9.png" src="../_images/image9.png" />
+<p class="caption"><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Connected Ethernet cable</span></p>
+</div>
+</div>
+<div class="section" id="login-web-based-management">
+<h4>4.1.1.3. Login Web-based Management<a class="headerlink" href="#login-web-based-management" title="Permalink to this headline">¶</a></h4>
+<p>In order to login and configure the switch via an Ethernet connection, the PC must have an IP address in the same subnet as the switch. For example, if the switch has an IP address of <strong>192.168.1.1</strong>, the PC should have an IP address of <strong>192.168.1.z</strong> (where z is a number between 2 ~ 254), and a subnet mask of <strong>255.255.255.0</strong>. You can open the web browser and enter <strong>192.168.1.1</strong> (the factory-default IP address) in the address bar. Then press &lt;Enter&gt;.</p>
+<div class="figure align-center" id="id2">
+<img alt="../_images/login_ip.png" src="../_images/login_ip.png" />
+<p class="caption"><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Enter the IP address 192.168.1.1 in the web browser</span></p>
+</div>
+<div class="figure align-center" id="id3">
+<img alt="../_images/login_page.png" src="../_images/login_page.png" />
+<p class="caption"><span class="caption-number">Fig. 4.3 </span><span class="caption-text">Login page</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The switch&#8217;s factory default IP address is 192.168.1.1 with a subnet mask of 255.255.255.0 and a default gateway of 0.0.0.0.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>4.2. Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>The features and functions of the NPort WebSmart Switch can be configured for optimum use through the Web-based Management Utility.</p>
+<div class="section" id="web-based-management">
+<h3>4.2.1. Web-based Management<a class="headerlink" href="#web-based-management" title="Permalink to this headline">¶</a></h3>
+<p>After a successful login you will see the screen below:</p>
+<div class="figure align-center" id="id4">
+<img alt="../_images/web_based_management.png" src="../_images/web_based_management.png" />
+<p class="caption"><span class="caption-number">Fig. 4.4 </span><span class="caption-text">Web-based Management</span></p>
+</div>
+<p>Above is the Web-based Management screen. The three main areas are the <strong>Tool Bar</strong> on top, the <strong>Function Tree</strong>, and the Main Configuration Screen.</p>
+<p>The <strong>Tool Bar</strong> provides a quick and convenient way for essential utility functions like firmware and configuration management.</p>
+<p>By choosing different functions in the <strong>Function Tree</strong>, you can change all the settings in the <strong>Main Configuration Screen</strong>. The main configuration screen will show the current status of your Switch by clicking the model name on top of the function tree.</p>
+<p>At the upper right corner of the screen the username and current IP address will be displayed.</p>
+<p>Under the username is the Logout button. Click this to end this session.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you close the web browser without clicking the Logout button, it will be seen as an abnormal exit and the login session will still be occupied.</p>
+</div>
+<p>Finally, by clicking on the NPort logo at the upper-left corner of the screen you will be redirected to the local NPort website.</p>
+<dl class="docutils">
+<dt><em>Tool Bar &gt; Save</em></dt>
+<dd>The Save provides Save Configuration.</dd>
+</dl>
+<div class="figure align-center" id="id5">
+<img alt="../_images/save.png" src="../_images/save.png" />
+<p class="caption"><span class="caption-number">Fig. 4.5 </span><span class="caption-text">Save</span></p>
+</div>
+<ul>
+<li><dl class="first docutils">
+<dt>Save Configuration</dt>
+<dd><p class="first last">Select to save the entire configuration changes you have made to the device to switch’s non-volatile RAM.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="figure align-center" id="id6">
+<img alt="../_images/save_configuration.png" src="../_images/save_configuration.png" />
+<p class="caption"><span class="caption-number">Fig. 4.6 </span><span class="caption-text">Save Configuration</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="function-tree">
+<h2>4.3. Function Tree<a class="headerlink" href="#function-tree" title="Permalink to this headline">¶</a></h2>
+<p>All configuration options on the switch are accessed through the Setup menu on the left side of the screen. Click on the setup item that you want to configure. The following sections provide more detailed description of each feature and function.</p>
+<div class="figure align-center" id="id7">
+<img alt="../_images/function_tree.png" src="../_images/function_tree.png" />
+<p class="caption"><span class="caption-number">Fig. 4.7 </span><span class="caption-text">Function Tree</span></p>
+</div>
+<p>The Maintenance function controls such as Reset System, Reboot Device, Firmware Upgrade and Configuration Backup &amp; Restore.</p>
+<div class="figure align-center" id="id8">
+<img alt="../_images/advanced_settings_management.png" src="../_images/advanced_settings_management.png" />
+<p class="caption"><span class="caption-number">Fig. 4.8 </span><span class="caption-text">Figure – Advanced Settings &gt; Management</span></p>
+</div>
+<ul>
+<li><dl class="first docutils">
+<dt>Configuration</dt>
+<dd><p class="first last">Provide a safe reset option for the Switch. All configuration settings in non-volatile RAM will be reset to factory default and then the Switch will reboot.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="figure align-center" id="id9">
+<img alt="../_images/management_maintenance_configuration.png" src="../_images/management_maintenance_configuration.png" />
+<p class="caption"><span class="caption-number">Fig. 4.9 </span><span class="caption-text">Management &gt; Maintenance &gt; Configuration</span></p>
+</div>
+<ul>
+<li><dl class="first docutils">
+<dt>Firmware Backup &amp; Upgrade</dt>
+<dd><div class="first last line-block">
+<div class="line">Click <em>Backup</em> to save the firmware to your disk.</div>
+<div class="line">Click <em>Browse</em> to browse your inventories for a saved firmware file.</div>
+<div class="line">Click <em>Upgrade</em> after selecting the firmware file you want to restore.</div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="figure align-center" id="id10">
+<img alt="../_images/management_maintenance_firmware.png" src="../_images/management_maintenance_firmware.png" />
+<p class="caption"><span class="caption-number">Fig. 4.10 </span><span class="caption-text">Management &gt; Maintenance &gt; Firmware</span></p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Do not disconnect the PC or remove the power cord from device until upgrade is complete. The Switch may crash if the Firmware Upgrade is incomplete.</p>
+</div>
+<ul>
+<li><dl class="first docutils">
+<dt>Reboot</dt>
+<dd><p class="first last">Provide a safe way to reboot the system. Click Reboot to restart the switch.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="figure align-center" id="id11">
+<img alt="../_images/management_maintenance_reboot.png" src="../_images/management_maintenance_reboot.png" />
+<p class="caption"><span class="caption-number">Fig. 4.11 </span><span class="caption-text">Management &gt; Maintenance &gt; Reboot</span></p>
+</div>
+</div>
+<div class="section" id="system-information">
+<h2>4.4. System Information<a class="headerlink" href="#system-information" title="Permalink to this headline">¶</a></h2>
+<p>The System Information provides an overview of the switch which includes essential information such as firmware, hardware and IP address. It also offers an overall status of common software features:</p>
+<dl class="docutils">
+<dt>Port Mirroring:</dt>
+<dd>Click Basic <em>Settings &gt; Port Management &gt; Port Mirroring</em>. By default this feature is disabled.</dd>
+<dt>Storm Control:</dt>
+<dd>Click Advanced <em>Setting &gt; Bandwidth Control &gt; Storm Control</em>. By default this feature is disabled.</dd>
+<dt>IGMP Snooping:</dt>
+<dd>Click Advanced <em>Setting &gt; L2 Multicast Control &gt; IGMP Snooping</em>. By default this feature is disabled.</dd>
+<dt>Link Aggregation:</dt>
+<dd>Click <em>Advanced Setting &gt; Link Aggregation</em>. By default this feature is disabled.</dd>
+<dt>802.1Q VLAN:</dt>
+<dd>Click <em>Advanced Setting &gt; VLAN &gt; 802.1Q VLAN</em>. By default this feature is disabled.</dd>
+<dt>Loop Detection:</dt>
+<dd>Click <em>Advanced Setting &gt; Loop Detection</em>. By default this feature is disabled.</dd>
+</dl>
+<div class="figure align-center" id="id12">
+<img alt="../_images/system_information.png" src="../_images/system_information.png" />
+<p class="caption"><span class="caption-number">Fig. 4.12 </span><span class="caption-text">System Information</span></p>
+</div>
+<div class="section" id="basic-settings-general-setting">
+<h3>4.4.1. Basic Settings &gt; General Setting<a class="headerlink" href="#basic-settings-general-setting" title="Permalink to this headline">¶</a></h3>
+<p>The General Setting allows the user to configure the IP address and the basic system information of the Switch.</p>
+<dl class="docutils">
+<dt>IP Information:</dt>
+<dd>There are two ways for the switch to obtain an IP address: Static and DHCP (Dynamic Host Configuration Protocol).</dd>
+</dl>
+<p>When using static mode, the IP Address, Subnet Mask and Gateway can be manually configured. When using DHCP mode, the Switch will first look for a DHCP server to provide it with an IP address (including network mask and default gateway) before using the default or previously entered settings. By default the IP setting is static mode with IP address is 192.168.1.1 and subnet mask is 255.255.255.0.</p>
+<dl class="docutils">
+<dt>System Information:</dt>
+<dd>By entering a System Name, the device can more easily be recognized on the LAN.</dd>
+</dl>
+<div class="figure align-center" id="id13">
+<img alt="../_images/basic_settings_general_settings_system.png" src="../_images/basic_settings_general_settings_system.png" />
+<p class="caption"><span class="caption-number">Fig. 4.13 </span><span class="caption-text">Figure – Basic Settings &gt; General Settings &gt; System</span></p>
+</div>
+</div>
+<div class="section" id="basic-settins-port-management-port-setting">
+<h3>4.4.2. Basic Settins &gt; Port Management &gt; Port Setting<a class="headerlink" href="#basic-settins-port-management-port-setting" title="Permalink to this headline">¶</a></h3>
+<p>In the Port Management page, the status of all ports can be monitored and adjusted for optimum configuration. By selecting a range of ports (<em>From Port</em> and <em>To Port</em>), the Speed can be set for all selected ports, effective by clicking <em>Apply</em>.</p>
+<div class="figure align-center" id="id14">
+<img alt="../_images/basic_settins_port_management_port_setting.png" src="../_images/basic_settins_port_management_port_setting.png" />
+<p class="caption"><span class="caption-number">Fig. 4.14 </span><span class="caption-text">Basic Settins &gt; Port Management &gt; Port Setting</span></p>
+</div>
+<dl class="docutils">
+<dt>Speed:</dt>
+<dd>Copper connections can operate in Forced Mode settings (1000M Full, 100M Full, 100M Half, 10M Full, 10M Half), Auto, or Disabled. The default setting for all ports is Auto.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Be sure to adjust port speed settings appropriately after changing connected cable media types.</p>
+</div>
+<dl class="docutils">
+<dt>Link Status:</dt>
+<dd>Reporting Down indicates the port is disconnected.</dd>
+<dt>Flow Control:</dt>
+<dd>You can enable this function to mitigate the traffic congestion. Ports configured for full-duplex use 802.3x flow control, half-duplex ports use backpressure flow control. The default setting is disabled.</dd>
+</dl>
+</div>
+<div class="section" id="basic-settings-port-management-port-counters">
+<h3>4.4.3. Basic Settings &gt; Port Management &gt; Port Counters<a class="headerlink" href="#basic-settings-port-management-port-counters" title="Permalink to this headline">¶</a></h3>
+<p>The Statistics screen displays the status of each port packet count.</p>
+<p>Click <em>Refresh</em> button to view the latest information.</p>
+<p>Click <em>Clear All</em> button to reset the details displayed.</p>
+<div class="figure align-center" id="id15">
+<img alt="../_images/basic_settings_port_management_port_counters.png" src="../_images/basic_settings_port_management_port_counters.png" />
+<p class="caption"><span class="caption-number">Fig. 4.15 </span><span class="caption-text">Basic Settings &gt; Port Management &gt; Port Counters</span></p>
+</div>
+<dl class="docutils">
+<dt>EgressOK:</dt>
+<dd>Number of packets transmitted successfully.</dd>
+<dt>IngressOK:</dt>
+<dd>Number of packets received successfully.</dd>
+<dt>EgressError:</dt>
+<dd>Number of transmitted packets resulting in error.</dd>
+<dt>IngressError:</dt>
+<dd>Number of received packets resulting in error.</dd>
+</dl>
+</div>
+<div class="section" id="basic-settings-port-management-port-mirroring">
+<h3>4.4.4. Basic Settings &gt; Port Management &gt; Port Mirroring<a class="headerlink" href="#basic-settings-port-management-port-mirroring" title="Permalink to this headline">¶</a></h3>
+<p>Port Mirroring is a method of monitoring network traffic that forwards a copy of each incoming and/or outgoing packet from one port of the Switch to another port where the packet can be studied. This enables network managers to better monitor network performances.</p>
+<div class="figure align-center" id="id16">
+<img alt="../_images/basic_settings_port_management_port_mirroring.png" src="../_images/basic_settings_port_management_port_mirroring.png" />
+<p class="caption"><span class="caption-number">Fig. 4.16 </span><span class="caption-text">Basic Settings &gt; Port Management &gt; Port Mirroring</span></p>
+</div>
+<p>Selection <em>Mirror Mode</em> for the Source Ports is as follows:</p>
+<dl class="docutils">
+<dt>Ingress:</dt>
+<dd>Duplicates the data transmitted from the source port and forwards it to the Target Port.</dd>
+</dl>
+<p>Click “all” to include all ports into port mirroring.</p>
+<dl class="docutils">
+<dt>Egress:</dt>
+<dd>Duplicates the data that received from the source port and forwards it to the Target Port.</dd>
+</dl>
+<p>Click “all” to include all ports into port mirroring.</p>
+<dl class="docutils">
+<dt>Both (transmit and receive) mode:</dt>
+<dd>Duplicate both the data transmitted from and data sent to the source port, and forwards all the data to the assigned Target Port. Click “all” to include all ports into port mirroring.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The target ports will stop mirroring packets if there are unknown tags or destination packets sent out by source ports.</p>
+</div>
+</div>
+<div class="section" id="advanced-settings-link-aggregation">
+<h3>4.4.5. Advanced Settings &gt; Link Aggregation<a class="headerlink" href="#advanced-settings-link-aggregation" title="Permalink to this headline">¶</a></h3>
+<p>The LAG function allows the switch to combine two or four ports together to increase bandwidth. Select the LAG Groups, choose the Members to be grouped together, and then click <em>Apply</em> to activate the selected LAG Groups. Up to eight LAG Groups may be created, each supporting up to four ports.</p>
+<p>Click <em>Disable</em> button to remove all the members in this trunk group.</p>
+<div class="figure align-center" id="id17">
+<img alt="../_images/advanced_settings_link_aggregation.png" src="../_images/advanced_settings_link_aggregation.png" />
+<p class="caption"><span class="caption-number">Fig. 4.17 </span><span class="caption-text">Advanced Settings &gt; Link Aggregation</span></p>
+</div>
+</div>
+<div class="section" id="advanced-settings-l2-multicast-control-igmp-snooping">
+<h3>4.4.6. Advanced Settings &gt; L2 Multicast Control &gt; IGMP Snooping<a class="headerlink" href="#advanced-settings-l2-multicast-control-igmp-snooping" title="Permalink to this headline">¶</a></h3>
+<p>With Internet Group Management Protocol (IGMP) snooping, the WebSmart Switch can make intelligent multicast forwarding decisions by examining the contents of each frame’s Layer 2 MAC header.</p>
+<p>By default, IGMP is disabled. If enabled, the WebSmart switch can recognize IGMP queries and reports sent between network stations or devices and an IGMP host. With IGMP snooping enabled, the WebSmart switch will forward multicast traffic only to the connections that have members attached</p>
+<div class="figure align-center" id="id18">
+<img alt="../_images/advanced_settings_l2_multicast_control_igmp_snooping_igmp_snooping_setting.png" src="../_images/advanced_settings_l2_multicast_control_igmp_snooping_igmp_snooping_setting.png" />
+<p class="caption"><span class="caption-number">Fig. 4.18 </span><span class="caption-text">Advanced Settings &gt; L2 Multicast Control &gt; IGMP Snooping&gt; IGMP Snooping setting</span></p>
+</div>
+</div>
+<div class="section" id="advanced-settings-loop-detection">
+<h3>4.4.7. Advanced Settings &gt; Loop Detection<a class="headerlink" href="#advanced-settings-loop-detection" title="Permalink to this headline">¶</a></h3>
+<p>The Loopback Detection function is used to detect the loop created by a specific port while Spanning Tree Protocol (STP) is not enabled in the network, especially when the down links are hubs or unmanaged switches. The Switch will automatically shut down the port. The Loopback Detection port will be unlocked when the Loopback Detection <em>Recover Time</em> times out. The Loopback Detection function can be implemented on a range of ports at a time.</p>
+<div class="figure align-center" id="id19">
+<img alt="../_images/advanced_settings_loop_detection.png" src="../_images/advanced_settings_loop_detection.png" />
+<p class="caption"><span class="caption-number">Fig. 4.19 </span><span class="caption-text">Advanced Settings &gt; Loop Detection</span></p>
+</div>
+<dl class="docutils">
+<dt>Loop Detection:</dt>
+<dd>Enable or disable Loopback detection. The default is Disabled.</dd>
+<dt>Interval (1-32767):</dt>
+<dd>Set a Loop detection Interval between 1 and 32767 seconds. The default is 1 seconds.</dd>
+<dt>Recover Time (0 or 60-1000000):</dt>
+<dd>Time allowed (in seconds) for recovery when a Loopback is detected.</dd>
+</dl>
+<p>The Loop Detection Recover Time can be set at 0 seconds, or 60 to 1000000 seconds. Entering 0 will disable the Loop Detection Recover Time. The default is 60 seconds.
+Click <em>Apply</em> to implement changes made.</p>
+</div>
+<div class="section" id="troubleshooting-cable-diagnostics">
+<h3>4.4.8. Troubleshooting &gt; Cable Diagnostics<a class="headerlink" href="#troubleshooting-cable-diagnostics" title="Permalink to this headline">¶</a></h3>
+<p>The Cable Diagnostics is designed primarily for administrators and customer service representatives to examine of the copper cable quality. It rapidly determines the type of cable errors occurred in the cable.
+Select a port and then click the Test button to start the diagnosis.</p>
+<div class="figure align-center" id="id20">
+<img alt="../_images/troubleshooting_cable_diagnostics.png" src="../_images/troubleshooting_cable_diagnostics.png" />
+<p class="caption"><span class="caption-number">Fig. 4.20 </span><span class="caption-text">Troubleshooting &gt; Cable Diagnostics</span></p>
+</div>
+<dl class="docutils">
+<dt>Test Result:</dt>
+<dd><p class="first">The description of the cable diagnostic results.</p>
+<ul class="last simple">
+<li>OK: Means the cable is good for the connection.</li>
+<li>Short in Cable: Means the wires of the RJ45 cable may be in contact somewhere.</li>
+<li>Open in Cable: Means the wires of RJ45 cable may be broken or the other end of the cable is simply disconnected.</li>
+<li>Test Failed: Means some other errors occurred during cable diagnostics. Please select the same port and test again.</li>
+</ul>
+</dd>
+<dt>Cable Fault Distance (meters):</dt>
+<dd>Indicates the distance of the cable fault from the Switch port, if the cable is less than 2 meters, it will show “No Cable”. The deviation of &#8220;Cable Fault Distance&#8221; is +/-2 meters.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Cable length detection is effective at every speed of 10Mbps, 100Mbps and 1Gbps.</p>
+</div>
+</div>
+<div class="section" id="advanced-settings-vlan-802-1q-vlan">
+<h3>4.4.9. Advanced Settings &gt; VLAN &gt; 802.1Q VLAN<a class="headerlink" href="#advanced-settings-vlan-802-1q-vlan" title="Permalink to this headline">¶</a></h3>
+<p>A VLAN is a group of ports that can be anywhere in the network, but communicate as though they were in the same area.</p>
+<p>VLANs can be easily organized to reflect department groups (such as R&amp;D, Marketing), usage groups (such as e-mail), or multicast groups (multimedia applications such as video conferencing), and therefore help tosimplify network management by allowing users to move devices to a new VLAN without having to changeany physical connections.</p>
+<p>By default, 802.1Q VLAN is disabled. With 802.1Q VLAN enabled, the VLAN VID 1 is created by default with an empty VLAN name field and all ports are configured as “Untagged” members.</p>
+<dl class="docutils">
+<dt>The 802.1Q VLAN configuration is accomplished in following steps:</dt>
+<dd><ul class="first last simple">
+<li>Creating a new VID group</li>
+<li>Assigning ports as Access or Trunk.</li>
+<li>Configuring the PVID of access VLAN</li>
+<li>Advanced <em>Settings &gt; VLAN &gt; 802.1Q VLAN</em>: Click <em>Apply</em> to create a new VID group.</li>
+<li>Advanced <em>Settings &gt; VLAN &gt; 802.1Q VLAN Port Setting &gt; Edit</em>: Change the Port VLAN Mode act as Access or Trunk.</li>
+<li><em>PVID settings</em>: Port VLAN ID (PVID) is an identification that encompasses a particular switch port’s identification and VLAN membership. This identification is used to classify the incoming untagged frames.</li>
+<li>Click <em>Edit</em> to configure the PVID of a port.</li>
+</ul>
+</dd>
+<dt><em>Delete</em>:</dt>
+<dd>Click to delete the VLAN group.</dd>
+</dl>
+<div class="figure align-center" id="id21">
+<img alt="../_images/advanced_settings_vlan_8021q_vlan.png" src="../_images/advanced_settings_vlan_8021q_vlan.png" />
+<p class="caption"><span class="caption-number">Fig. 4.21 </span><span class="caption-text">Advanced Settings &gt; VLAN &gt; 802.1Q VLAN</span></p>
+</div>
+<div class="figure align-center" id="id22">
+<img alt="../_images/advanced_settings_vlan_8021q_vlan_port_setting.png" src="../_images/advanced_settings_vlan_8021q_vlan_port_setting.png" />
+<p class="caption"><span class="caption-number">Fig. 4.22 </span><span class="caption-text">Advanced Settings &gt; VLAN &gt; 802.1Q VLAN Port Setting</span></p>
+</div>
+<div class="figure align-center" id="id23">
+<img alt="../_images/advanced_settings_vlan_8021q_vlan_port_setting_edit.png" src="../_images/advanced_settings_vlan_8021q_vlan_port_setting_edit.png" />
+<p class="caption"><span class="caption-number">Fig. 4.23 </span><span class="caption-text">Advanced Settings &gt; VLAN &gt; 802.1Q VLAN Port Setting &gt; Edit</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When 802.1Q VLAN is enabled, the Port- Based VLAN settings will be set to Disabled.</p>
+</div>
+</div>
+<div class="section" id="basic-settings-general-settings-management-vlan">
+<h3>4.4.10. Basic Settings &gt; General Settings&gt; Management VLAN<a class="headerlink" href="#basic-settings-general-settings-management-vlan" title="Permalink to this headline">¶</a></h3>
+<p>802.1Q VLAN is used to decide which VLAN can access the switch.</p>
+<div class="figure align-center" id="id24">
+<img alt="../_images/basic_settings_general_settings.png" src="../_images/basic_settings_general_settings.png" />
+<p class="caption"><span class="caption-number">Fig. 4.24 </span><span class="caption-text">Basic Settings &gt; General Settings</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When 802.1Q Management VLAN is enabled, the 802.1Q VLAN should be enabled first.</p>
+</div>
+</div>
+<div class="section" id="advanced-settings-vlan-port-base-vlan">
+<h3>4.4.11. Advanced Settings &gt; VLAN &gt; Port-Base VLAN<a class="headerlink" href="#advanced-settings-vlan-port-base-vlan" title="Permalink to this headline">¶</a></h3>
+<p>Port-Based VLANs are the simplest and most common form of VLAN. It assigns the appliance LAN ports to VLANs, effectively transforming the appliances. You can assign multiple ports to the same VLAN, or each port to a separate VLAN.</p>
+<div class="figure align-center" id="id25">
+<img alt="../_images/advanced_settings_vlan_port_based_vlan_settings.png" src="../_images/advanced_settings_vlan_port_based_vlan_settings.png" />
+<p class="caption"><span class="caption-number">Fig. 4.25 </span><span class="caption-text">Figure – Advanced Settings &gt; VLAN &gt;Port-Based VLAN Settings</span></p>
+</div>
+<dl class="docutils">
+<dt>VLAN State:</dt>
+<dd>Choice Enabled or disable then click the <em>Apply</em> to enable or disable the feature.</dd>
+<dt><em>Add VLAN Index</em>:</dt>
+<dd>Click to create a new VLAN and to select VLAN ports. To save the members in a group, click <em>Apply</em>.</dd>
+<dt><em>Delete</em>:</dt>
+<dd>Click to delete the VLAN group.</dd>
+<dt><em>Delete All</em>:</dt>
+<dd>Click to delete all the VLAN groups.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When <strong>Port-Based VLAN</strong> is enabled, the 802.1Q VLAN settings and 802.1Q management VLAN settings will be set to Disabled as default. By default, all ports are untagged.</p>
+</div>
+</div>
+<div class="section" id="advanced-settings-qos">
+<h3>4.4.12. Advanced Settings &gt; QoS<a class="headerlink" href="#advanced-settings-qos" title="Permalink to this headline">¶</a></h3>
+<p>QoS is an implementation of the IEEE 802.1p standard that allows network administrators to reserve bandwidth for important functions that require a larger bandwidth or that might have a higher priority, such as VoIP (voice-over Internet Protocol), web browsing applications, file server applications or video conferencing. Thus with larger bandwidth, less critical traffic is limited, and therefore excessive bandwidth can be saved.</p>
+<p>The following figure displays the status of Quality of Service priority levels of each port, higher priority means the traffic from this port will be first handled by the switch. For packets that are untagged, the switch will assign the priority depending on your configuration.</p>
+<div class="figure align-center" id="id26">
+<img alt="../_images/advanced_settings_qos.png" src="../_images/advanced_settings_qos.png" />
+<p class="caption"><span class="caption-number">Fig. 4.26 </span><span class="caption-text">Advanced Settings &gt; QoS</span></p>
+</div>
+<dl class="docutils">
+<dt>Scheduler Method:</dt>
+<dd>Select Strict Priority to process the packets with the highest priority first. Select WRR (Weighted Round-Robin) to process packets according to the weight of each priority. When a priority level has reached its egress weight, the system will process the packets in the next level even if there are remaining packets. NPort WebSmart Switch system’s weight of priority levels are: 8 (Highest), 4 (High), 2 (Medium) and 1 (Low) packet. By default, the queuing mechanism is <strong>Strict Priority</strong>.</dd>
+</dl>
+</div>
+<div class="section" id="advanced-settings-bandwidth-control-storm-control">
+<h3>4.4.13. Advanced Settings &gt; Bandwidth Control &gt; Storm Control<a class="headerlink" href="#advanced-settings-bandwidth-control-storm-control" title="Permalink to this headline">¶</a></h3>
+<p>The Storm Control feature provides the ability to control the receive rate of broadcast, multicast, and unknown unicast packets. Once a packet storm has been detected, the Switch will drop packets coming into the Switch until the storm has subsided.</p>
+<div class="figure align-center" id="id27">
+<img alt="../_images/advanced_settings_bandwidth_control_storm_control.png" src="../_images/advanced_settings_bandwidth_control_storm_control.png" />
+<p class="caption"><span class="caption-number">Fig. 4.27 </span><span class="caption-text">Advanced Settings &gt; Bandwidth Control &gt; Storm Control</span></p>
+</div>
+<dl class="docutils">
+<dt>Storm Control Type:</dt>
+<dd>User can select the different Storm type from Broadcast Only, Multicast &amp; Broadcast, and Multicast &amp; Broadcast &amp; Unknown Unicast.</dd>
+<dt>Threshold (pps):</dt>
+<dd>If storm control is enabled (by default it is disabled), the threshold can be set from 1 to 1,000,000pps.</dd>
+</dl>
+<p>Click <em>Apply</em> for the settings to take effect.</p>
+</div>
+<div class="section" id="advanced-settings-bandwidth-control-rate-limit">
+<h3>4.4.14. Advanced Settings &gt; Bandwidth Control &gt; Rate Limit<a class="headerlink" href="#advanced-settings-bandwidth-control-rate-limit" title="Permalink to this headline">¶</a></h3>
+<p>The Bandwidth Control page allows network managers to define the bandwidth settings for a specified port’s transmitting and receiving data rates.</p>
+<div class="figure align-center" id="id28">
+<img alt="../_images/advanced_settings_bandwidth_control_rate_limit.png" src="../_images/advanced_settings_bandwidth_control_rate_limit.png" />
+<p class="caption"><span class="caption-number">Fig. 4.28 </span><span class="caption-text">Advanced Settings &gt; Bandwidth Control &gt; Rate Limit</span></p>
+</div>
+<p>From Port / To Port: A consecutive group of ports may be configured starting with the selected port.</p>
+<dl class="docutils">
+<dt>Direction:</dt>
+<dd>This drop-down menu allows you to select between Inbound (receive) and Outbound (transmit). This setting will determine whether the bandwidth ceiling is applied to receiving, transmitting, or both receiving and transmitting packets.</dd>
+<dt>No Limit:</dt>
+<dd>This drop-down menu allows you to specify that the selected port will have no bandwidth limit. Enabled disables the limit.</dd>
+<dt>Rate:</dt>
+<dd>This drop-down menu allows you to select data rate from 64Kbps to 512Mbps.</dd>
+</dl>
+<p>Click <em>Apply</em> to set the bandwidth control for the selected ports.</p>
+</div>
+<div class="section" id="basic-settings-mac-management-static-mac-setting">
+<h3>4.4.15. Basic Settings &gt; MAC Management &gt; Static MAC Setting<a class="headerlink" href="#basic-settings-mac-management-static-mac-setting" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center" id="id29">
+<img alt="../_images/basic_settings_mac_management_static_mac_setting.png" src="../_images/basic_settings_mac_management_static_mac_setting.png" />
+<p class="caption"><span class="caption-number">Fig. 4.29 </span><span class="caption-text">Basic Settings &gt; MAC Management &gt; Static MAC Setting</span></p>
+</div>
+<p>The <em>Static MAC Address Setting</em> table displays the static MAC addresses connected, as well as the VID. Click <em>Add Mac</em> to add a new MAC address, you also need to select the assigned Port number, enter both the Mac Address and VID and Click <em>Apply</em>. Click <em>Delete</em> to remove one entry or click <em>Delete all</em> to clear the list. You can also copy a learned MAC address from <em>Dynamic Forwarding Table</em> (please refer to <em>Security &gt; MAC Address Table &gt; Dynamic Forwarding Table</em> for details).</p>
+<p>By disabling Auto Learning capability and specify the static MAC addresses, the network is protected from potential threats like hackers because traffic from illegal MAC addresses will not be forwarded by the Switch.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">N1-8016/N1-8024/N1-8074 support 128 Static MAC Address entries.</p>
+</div>
+</div>
+<div class="section" id="basic-settings-mac-management-mac-address-table">
+<h3>4.4.16. Basic Settings &gt; MAC Management &gt; MAC Address Table<a class="headerlink" href="#basic-settings-mac-management-mac-address-table" title="Permalink to this headline">¶</a></h3>
+<p>For each port, this table displays the MAC address learned by the Switch.</p>
+<div class="figure align-center" id="id30">
+<img alt="../_images/basic_settings_mac_management_mac_address_table.png" src="../_images/basic_settings_mac_management_mac_address_table.png" />
+<p class="caption"><span class="caption-number">Fig. 4.30 </span><span class="caption-text">Basic Settings &gt; MAC Management &gt; MAC Address Table</span></p>
+</div>
+</div>
+<div class="section" id="advanced-settings-lldp">
+<h3>4.4.17. Advanced Settings &gt; LLDP<a class="headerlink" href="#advanced-settings-lldp" title="Permalink to this headline">¶</a></h3>
+<p>Link Layer Discovery Protocol (LLDP) allows the switch to advertise major capabilities and physical descriptions to adjacent devices. This information can help you identify system topology and detect bad configurations on the LAN.
+Select Enabled and click <em>Apply</em> to enable LLDP.</p>
+<div class="figure align-center" id="id31">
+<img alt="../_images/advanced_settings_lldp.png" src="../_images/advanced_settings_lldp.png" />
+<p class="caption"><span class="caption-number">Fig. 4.31 </span><span class="caption-text">Figure – Advanced Settings &gt; LLDP</span></p>
+</div>
+</div>
+<div class="section" id="advanced-settings-multicast-address">
+<h3>4.4.18. Advanced Settings &gt; Multicast Address<a class="headerlink" href="#advanced-settings-multicast-address" title="Permalink to this headline">¶</a></h3>
+<p>Multicast is a limited broadcast that allows one-to-many and many-to-many connections. In Layer 2 multicast, a single frame addressed to a specific multicast address is received, and copies of the frame to be transmitted on each relevant port are created.</p>
+<div class="figure align-center" id="id32">
+<img alt="../_images/advanced_settings_multicast_address.png" src="../_images/advanced_settings_multicast_address.png" />
+<p class="caption"><span class="caption-number">Fig. 4.32 </span><span class="caption-text">Figure – Advanced Settings &gt; Multicast Address</span></p>
+</div>
+</div>
+<div class="section" id="advanced-settings-dos-prevention">
+<h3>4.4.19. Advanced Settings &gt; DoS Prevention<a class="headerlink" href="#advanced-settings-dos-prevention" title="Permalink to this headline">¶</a></h3>
+<p>The switch supports configurable Denial of Service (DoS) attack protection for many different types of attacks.</p>
+<div class="figure align-center" id="id33">
+<img alt="../_images/advanced_settings_dos_prevention.png" src="../_images/advanced_settings_dos_prevention.png" />
+<p class="caption"><span class="caption-number">Fig. 4.33 </span><span class="caption-text">Figure – Advanced Settings &gt; DoS Prevention</span></p>
+</div>
+</div>
+<div class="section" id="advanced-settings-stp">
+<h3>4.4.20. Advanced Settings &gt; STP<a class="headerlink" href="#advanced-settings-stp" title="Permalink to this headline">¶</a></h3>
+<p>Spanning Tree Protocol (STP) provides a tree topology for switches on a bridged LAN. &nbsp;STP allows a network to have redundant paths without the risk of network loops.</p>
+<p>Rapid Spinning Tree Protocol (RSTP) detects and uses network topologies to enable faster convergence after a topology change, without creating forwarding loops.</p>
+<div class="figure align-center" id="id34">
+<img alt="../_images/advanced_settings_stp.png" src="../_images/advanced_settings_stp.png" />
+<p class="caption"><span class="caption-number">Fig. 4.34 </span><span class="caption-text">Figure – Advanced Settings &gt; STP</span></p>
+</div>
+</div>
+<div class="section" id="managemenet-user-accounts">
+<h3>4.4.21. Managemenet &gt; User Accounts<a class="headerlink" href="#managemenet-user-accounts" title="Permalink to this headline">¶</a></h3>
+<p>You can modify the username and password in order to refuse unauthorized users.</p>
+<div class="figure align-center" id="id35">
+<img alt="../_images/management_user_accounts.png" src="../_images/management_user_accounts.png" />
+<p class="caption"><span class="caption-number">Fig. 4.35 </span><span class="caption-text">Figure – Management &gt; User Accounts</span></p>
+</div>
+</div>
+<div class="section" id="advanced-poe-poe-setting-n1-8074-only">
+<h3>4.4.22. Advanced &gt; PoE &gt; PoE Setting (N1-8074 only)<a class="headerlink" href="#advanced-poe-poe-setting-n1-8074-only" title="Permalink to this headline">¶</a></h3>
+<p>N1-8074 supports Power over Ethernet (PoE) as defined by the IEEE Specification.  It supplies power to PD device up to 30W for PoE ports (1 – 12), meeting IEEE802.3at standards.
+This page allows user to configure the global PoE settings of the device.</p>
+<div class="figure align-center" id="id36">
+<img alt="../_images/advanced_settings_poe_poe_setting.png" src="../_images/advanced_settings_poe_poe_setting.png" />
+<p class="caption"><span class="caption-number">Fig. 4.36 </span><span class="caption-text">Figure – Advanced Settings &gt; PoE &gt; PoE Setting</span></p>
+</div>
+<dl class="docutils">
+<dt>From Port/To Port:</dt>
+<dd>Specifies the PoE function of a port or ports.</dd>
+<dt>Priority:</dt>
+<dd>Configure the power supply priority as “Low”, “Normal”, or “High” on designated port(s). Default is Normal.</dd>
+<dt>State:</dt>
+<dd>Select “Enabled” or “Disabled” to configure PoE function for designated port(s). Default is Enabled.</dd>
+<dt>Power Limit:</dt>
+<dd>This function allows you to manually set the port power current limitation to be given to the PD. To protect the N1-8074 and the connected devices, the power limit function will disable the PoE function of the port when the power is overloaded. Select from &#8220;Class 1&#8221;, &#8220;Class 2&#8221;, &#8220;Class 3&#8221;, “Class 4” and &#8220;Auto&#8221; for the power limit. &#8220;Auto&#8221; will negotiate and follow the classification from the PD power current based on the 802.3at standard.</dd>
+<dt>Max Wattage:</dt>
+<dd>Check the box and input the power budget (from 10000 to 30000 milliwatts) to manually assign an upper limit of port power budget on designated port(s).</dd>
+</dl>
+<p>Click <em>Apply</em> to make the configurations take effects or click Refresh to redisplay the table.</p>
+</div>
+<div class="section" id="advaned-poe-poe-status-n1-8074only">
+<h3>4.4.23. Advaned &gt; PoE &gt; PoE Status (N1-8074only)<a class="headerlink" href="#advaned-poe-poe-status-n1-8074only" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>PoE System Status:</dt>
+<dd><p class="first">Displays the system power status of device.</p>
+<ul class="last simple">
+<li>Delivered (W): Displays the current used PoE power.</li>
+<li>Power Budget (Total PoE Power Budget): Displays the total PoE power budget of this switch.</li>
+</ul>
+</dd>
+</dl>
+<p>The PoE port table also displays status including, Port, Port State, Class, Max watts, and watts Used.</p>
+<p>Class (power limit)
+The maximum power used by power devices is defined by the following classification</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="12%" />
+<col width="24%" />
+<col width="63%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Class</th>
+<th class="head">Usage</th>
+<th class="head">Output power limit by PSE</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>Default</td>
+<td>15.4 W</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>Optional</td>
+<td>4 W</td>
+</tr>
+<tr class="row-even"><td>2</td>
+<td>Optional</td>
+<td>7 W</td>
+</tr>
+<tr class="row-odd"><td>3</td>
+<td>Optional</td>
+<td>15.4W</td>
+</tr>
+<tr class="row-even"><td>4</td>
+<td>Optional</td>
+<td>30 W</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/NPort-Logo@570.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">1. About This Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">2. Product Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">3. Hardware Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">4. Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#management-options">4.1. Management Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">4.2. Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#function-tree">4.3. Function Tree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#system-information">4.4. System Information</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html">5. Appendix A - Technical</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html#appendix-b-rack-mount">6. Appendix B – Rack mount</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="appendix.html" title="5. Appendix A - Technical"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="installation.html" title="3. Hardware Installation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">8000 Series User&#39;s Manual 1.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, NPORT Networks, INC..
+    </div>
+  </body>
+</html>
