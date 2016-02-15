@@ -50,7 +50,7 @@ help:
 	@echo "  coverage   to run coverage check of the documentation (if enabled)"
 
 clean:
-	rm -rf $(BUILDDIR)/*
+	rm -rf $(BUILDDIR)/html $(BUILDDIR)/pdf
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
@@ -197,4 +197,4 @@ buildall: html latexpdf
 	@echo "Done, build all."
 
 release:
-	git add $(BUILDDIR)/html $(BUILDDIR)/doctrees; git commit -m "release (autobuild)"; git push origin gh-pages
+	git add $(BUILDDIR)/html $(BUILDDIR)/doctrees $(BUILDDIR)/pdf; git commit -m "release (autobuild)"; git push origin gh-pages

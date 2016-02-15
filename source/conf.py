@@ -53,7 +53,7 @@ author = u'NPORT Networks, INC.'
 # built documents.
 #
 # The short X.Y version.
-version = u'1.2'
+version = u'1.3'
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -270,6 +270,7 @@ latex_logo = "images/NPort-Logo@570.png"
 
 # If false, no module index is generated.
 #latex_domain_indices = True
+
 
 # -- Options for manual page output ---------------------------------------
 

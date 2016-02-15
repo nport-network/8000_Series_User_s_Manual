@@ -121,7 +121,7 @@ The Maintenance function controls such as Reset System, Reboot Device, Firmware 
 .. figure:: /images/advanced_settings_management.png
 	:align: center
 
-	Figure – Advanced Settings > Management
+	Advanced Settings > Management
 
 - Configuration
 	Provide a safe reset option for the Switch. All configuration settings in non-volatile RAM will be reset to factory default and then the Switch will reboot.
@@ -190,8 +190,22 @@ System Information:
 .. figure:: /images/basic_settings_general_settings_system.png
 	:align: center
 
-	Figure – Basic Settings > General Settings > System
- 
+	Basic Settings > General Settings > System
+
+Basic Settings > General Setting > Time Setting
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+System Clock Setting:
+	You could set the system time manually or you could enable the SNTP mode and connect it to SNTP Server to get the latest time.
+
+Time Zone Settings and Daylight Saving Time:
+	Set different Time Zone and Daylight Saving Date by your area.
+
+.. figure:: /images/basic_settings_general_settings_time_setting.png
+	:align: center
+
+	Basic Settings > General Settings > Time Setting
+
 Basic Settins > Port Management > Port Setting
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -212,6 +226,16 @@ Link Status:
 	Reporting Down indicates the port is disconnected.
 Flow Control:
 	You can enable this function to mitigate the traffic congestion. Ports configured for full-duplex use 802.3x flow control, half-duplex ports use backpressure flow control. The default setting is disabled.
+
+Basic Settins > Port Management > EEE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Set of enhancements to the twisted-pair and backplane Ethernet family of computer networking standards that allow for less power consumption during periods of low data activity.
+
+.. figure:: /images/basic_settins_port_management_eee.png
+	:align: center
+
+	Basic Settins > Port Management > EEE
 
 Basic Settings > Port Management > Port Counters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -258,6 +282,7 @@ Click “all” to include all ports into port mirroring.
 
 Both (transmit and receive) mode:
 	Duplicate both the data transmitted from and data sent to the source port, and forwards all the data to the assigned Target Port. Click “all” to include all ports into port mirroring.
+
 .. NOTE::
 	The target ports will stop mirroring packets if there are unknown tags or destination packets sent out by source ports.
 
@@ -273,8 +298,8 @@ Click *Disable* button to remove all the members in this trunk group.
 
 	Advanced Settings > Link Aggregation
 
-Advanced Settings > L2 Multicast Control > IGMP Snooping
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Advanced Settings > L2 Multicast Control > IGMP Snooping > IGMP Snooping setting
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 With Internet Group Management Protocol (IGMP) snooping, the WebSmart Switch can make intelligent multicast forwarding decisions by examining the contents of each frame’s Layer 2 MAC header.
 
@@ -283,7 +308,17 @@ By default, IGMP is disabled. If enabled, the WebSmart switch can recognize IGMP
 .. figure:: /images/advanced_settings_l2_multicast_control_igmp_snooping_igmp_snooping_setting.png
 	:align: center
 
-	Advanced Settings > L2 Multicast Control > IGMP Snooping> IGMP Snooping setting
+	Advanced Settings > L2 Multicast Control > IGMP Snooping > IGMP Snooping setting
+
+Advanced Settings > L2 Multicast Control > IGMP Snooping > IGMP Group Setting
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Group address is  the multicast address being queried when sending a Group-Specific or Group-and-Source-Specific Query. In port selected section you could manage members ports as a group.
+
+.. figure:: /images/advanced_settings_l2_multicast_control_igmp_snooping_igmp_group_setting.png
+	:align: center
+
+	Advanced Settings > L2 Multicast Control > IGMP Snooping > IGMP Group Setting
 
 Advanced Settings > Loop Detection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -392,7 +427,7 @@ Port-Based VLANs are the simplest and most common form of VLAN. It assigns the a
 .. figure:: /images/advanced_settings_vlan_port_based_vlan_settings.png
 	:align: center
 
-	Figure – Advanced Settings > VLAN >Port-Based VLAN Settings
+	Advanced Settings > VLAN >Port-Based VLAN Settings
 
 VLAN State:
 	Choice Enabled or disable then click the *Apply* to enable or disable the feature.
@@ -482,6 +517,17 @@ For each port, this table displays the MAC address learned by the Switch.
 
 	Basic Settings > MAC Management > MAC Address Table
 
+
+Basic Settings > MAC Management > Age Time Setting
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When the aging time for a MAC address in the table expired, the address will be removed.
+
+.. figure:: /images/basic_settings_mac_management_age_time_setting.png
+	:align: center
+
+	Basic Settings > MAC Management > Age Time Setting
+
 Advanced Settings > LLDP
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -491,7 +537,7 @@ Select Enabled and click *Apply* to enable LLDP.
 .. figure:: /images/advanced_settings_lldp.png
 	:align: center
 
-	Figure – Advanced Settings > LLDP
+	Advanced Settings > LLDP
 
 Advanced Settings > Multicast Address
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -501,7 +547,7 @@ Multicast is a limited broadcast that allows one-to-many and many-to-many connec
 .. figure:: /images/advanced_settings_multicast_address.png
 	:align: center
 
-	Figure – Advanced Settings > Multicast Address
+	Advanced Settings > Multicast Address
 
 Advanced Settings > DoS Prevention
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -511,7 +557,7 @@ The switch supports configurable Denial of Service (DoS) attack protection for m
 .. figure:: /images/advanced_settings_dos_prevention.png
 	:align: center
 
-	Figure – Advanced Settings > DoS Prevention
+	Advanced Settings > DoS Prevention
 
 Advanced Settings > STP
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -523,7 +569,7 @@ Rapid Spinning Tree Protocol (RSTP) detects and uses network topologies to enabl
 .. figure:: /images/advanced_settings_stp.png
 	:align: center
 
-	Figure – Advanced Settings > STP
+	Advanced Settings > STP
 
 Managemenet > User Accounts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -533,7 +579,7 @@ You can modify the username and password in order to refuse unauthorized users.
 .. figure:: /images/management_user_accounts.png
 	:align: center
 
-	Figure – Management > User Accounts
+	Management > User Accounts
 
 
 Advanced > PoE > PoE Setting (N1-8074 only)
@@ -545,7 +591,7 @@ This page allows user to configure the global PoE settings of the device.
 .. figure:: /images/advanced_settings_poe_poe_setting.png
 	:align: center
 
-	Figure – Advanced Settings > PoE > PoE Setting
+	Advanced Settings > PoE > PoE Setting
 
 From Port/To Port:
 	Specifies the PoE function of a port or ports.
